@@ -14,6 +14,12 @@
     <title>Thomas White</title>
 </head>
 
+<!-- ### Add To Your Portfolio
+
+After completing the homework please add the piece to your portfolio. Make sure to add a link to your updated portfolio in the comments section of your homework so the TAs can easily ensure you completed this step when they are grading the assignment. 
+***To receive an 'A' on any assignment, you must link to it from your portfolio.
+                    
+*** -->
 
 <body class="d-flex flex-column h-90 mt-3">
 
@@ -25,11 +31,13 @@
 
             <a class="navbar-brand text-success" href="#">Thomas White</a>
 
+            <!-- Hiding Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- HTML links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ml-auto">
@@ -45,20 +53,24 @@
                         <a class="nav-link" href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
                     </li>
 
-                    <!--        drop down menu              -->
-                    <li class="nav-item dropdown">
+                    <!--        drop down menu     MCDSODF         -->
+                    <!-- text for dropdown label goes here-->
+                    <!-- dropdown menu items wrapped in div for spacing and view changes-->
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <!-- <li class="nav-item dropdown text-success ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown</a>
+                            
+                        </a>
 
-                        <!-- dropdown menu items wrapped in div for spacing and view changes-->
+                        
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="index.html">About</a>
                             <a class="dropdown-item" href="portfolio.html">Portfolio</a>
-                            <!-- <div class="dropdown-divider"></div> -->
+                            
                             <a class="dropdown-item" href="contact.html">Contact</a>
                         </div>
-                    </li>
+                    </li> -->
                     <!-- documentation said you dont need list items if you but the nav-item in each link item? need to look this up again -->
 
                     <!-- Disabled button?  -->
@@ -80,7 +92,7 @@
 
 
     <!-- Begin page content -->
-    <main role="main" class="flex-shrink-0 mainfont" id="maincontainerindexpage">
+    <main role="main" class="flex-shrink-0 mainfont my-4" id="maincontainerindexpage">
 
         <!-- MAIN _ Begin page content -->
         <div class="mt-5 container row ml-auto mr-auto" id="mainRowcontent">
@@ -88,51 +100,44 @@
 
             <div class="col-10">
 
-                <h1>Portfolio</h1>
-                <div class="row  mb-5">
-                    <div class="col-12 ">
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage.jpeg" alt="Thomas White" class="clearfix imgNoPadding"
-                                height="250px" width="300px">
-                            <div class="tealbanner text"> <a href="psychic-game.html" target="_blank" rel="noopener
-                                noreferrer">Letter Game! </a></div>
-                        </div>
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage2.jpeg" alt="Thomas White"
-                                class="clearfix imgNoPadding" height="250px" width="300px">
-                            <div class="tealbanner">Hangman!</div>
-                        </div>
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage3.jpeg" alt="Thomas White"
-                                class="clearfix imgNoPadding" height="250px" width="300px">
-                            <div class="tealbanner">_</div>
-                        </div>
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage.jpeg" alt="Thomas White" class="clearfix imgNoPadding"
-                                height="250px" width="300px">
-                            <div class="tealbanner">_</div>
-                        </div>
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage2.jpeg" alt="Thomas White"
-                                class="clearfix imgNoPadding" height="250px" width="300px">
-                            <div class="tealbanner">_</div>
-                        </div>
-                        <div class="picturerelativebanner">
-                            <img src="assets/images/testportimage3.jpeg" alt="Thomas White"
-                                class="clearfix imgNoPadding" height="250px" width="300px">
-                            <div class="tealbanner">_</div>
-                        </div>
+                <div class="row mt-5">
 
+                    <div class="col-12 mb-5">
+                        <div class="bg-dark ">
+                            <p class="text-success">Computer: ~ Guess the Letter ~~~ <span id="computerGuess"></span>
+                            </p>
+
+                            <p class="text-success">Wins: <span id="displayWins"></span></p>
+                            <p class="text-danger">Losses: <span id="displayLosses"></span></p>
+                            <p class="text-success">Guesses Remaining: <span id="displayNumGuesses"></span></p>
+                            <p class="text-success"> User Guess: <span id="userGuessIDhtml"></span></p>
+                            <p class="text-success"> Letters Guessed: <span id="userLettersGuessed"></span></p>
+
+                        </div>
+                        <!-- will attempt to build the option two on sunday -  -->
+                        <!-- ## Option One: Psychic Game (Basic)
+
+                            ![Psychic](Images/1-Psychic.jpg)
+
+                            1. [Watch the demo](https://youtu.be/qTc45Lox97g).
+                            2. You're going to make a game just like the one in the video. Essentially, the app randomly picks a letter, and the user has to guess which letter the app chose. Put the following text on your page:
+                            3. Guess what letter I'm thinking of
+                            4. Wins: (# of times the user has guessed the letter correctly)
+                            5. Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
+                            6. Guesses Left: (# of guesses left. This will update)
+                            7. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
+                            8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
+                            9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins). -->
                     </div>
                 </div>
             </div>
 
             <div class="col-1"></div>
 
+        </div>
+
     </main>
     <!-- MAIN _ End -->
-
-
 
     <!-- STICKY FOOTER BOOTSTRAP -->
     <footer class="footer mt-auto py-3 bg-dark">
@@ -158,7 +163,6 @@
 
     <!-- ~ ~ _  Word-Guess-Game Javascript  _ ~ ~ -->
     <script src="assets/javascript/game.js"></script>
-
 </body>
 
 </html>
