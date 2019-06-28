@@ -9,6 +9,12 @@ var wins = 0
 var losses = 0
 var userLettersGuessed = []
 
+// underScore = computerGuess.split('');
+// newUnderScore = underScore.forEach(function (item)) {
+  //        usedLetters.push(item.replace(item, '_'))
+  //    }
+
+
 // GENERATE COMPUTER GUESS
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)]
 
@@ -30,6 +36,7 @@ displayNumGuesses.textContent = numGuesses
 
 // onKeyDown - Gets User getKeyChoice key entered & Starts Game Logic
 // ~
+
 document.onkeyup = function (event) {
 
   // assign the key choice (and key choice value) from to the HTML element-?varaiable
